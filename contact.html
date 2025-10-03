@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>HomeAcademy</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta
+            content="Дом и уют, организация пространства, лайфхаки для хранения вещей, уборка, ремонт, освещение интерьера, комфорт в доме"
+            name="keywords"
+        />
+        <meta
+            content="Практичные советы и лайфхаки для дома: организация пространства, удобное хранение, уборка, освещение и уютный интерьер."
+            name="description"
+        />
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Flaticon Font -->
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+
+        <!-- Libraries Stylesheet -->
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-light position-relative shadow">
+            <nav
+                class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5"
+            >
+                <a
+                    href="index.html"
+                    class="navbar-brand font-weight-bold text-secondary"
+                    style="font-size: 30px"
+                >
+                    <span class="text-primary">HomeAcademy</span>
+                </a>
+                <button
+                    type="button"
+                    class="navbar-toggler"
+                    data-toggle="collapse"
+                    data-target="#navbarCollapse"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse justify-content-between"
+                    id="navbarCollapse"
+                >
+                    <div
+                        class="navbar-nav font-weight-bold py-0"
+                        style="margin-left: auto"
+                    >
+                        <a href="index.html" class="nav-item nav-link"
+                            >Главная</a
+                        >
+                        <a href="about.html" class="nav-item nav-link">О нас</a>
+                        <a href="testimonials.html" class="nav-item nav-link"
+                            >Отзывы</a
+                        >
+                        <a href="services.html" class="nav-item nav-link"
+                            >Советы</a
+                        >
+                        <a href="contact.html" class="nav-item nav-link active"
+                            >Контакты</a
+                        >
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-primary mb-5">
+            <div
+                class="d-flex flex-column align-items-center justify-content-center"
+                style="min-height: 400px"
+            >
+                <h3 class="display-3 font-weight-bold text-white">Контакты</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0">
+                        <a class="text-white" href="">Главная</a>
+                    </p>
+                    <p class="m-0 px-2">/</p>
+                    <p class="m-0">Контакты</p>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Contact Start -->
+        <div class="container-fluid pt-5">
+            <div class="container">
+                <div class="text-center pb-2">
+                    <p class="section-title px-5">
+                        <span class="px-2">Свяжитесь с нами</span>
+                    </p>
+                    <h1 class="mb-4">
+                        Контакты для консультаций по дому и уюту
+                    </h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 mb-5">
+                        <div class="contact-form">
+                            <div id="success"></div>
+                            <form
+                                name="sentMessage"
+                                id="contactForm"
+                                action="thanks.html"
+                                method="get"
+                            >
+                                <div class="control-group mb-3">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="name"
+                                        placeholder="Ваше имя"
+                                        required
+                                    />
+                                </div>
+                                <div class="control-group mb-3">
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                        placeholder="Ваш Email"
+                                        required
+                                    />
+                                </div>
+                                <div class="control-group mb-3">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="subject"
+                                        placeholder="Тема"
+                                        required
+                                    />
+                                </div>
+                                <div class="control-group mb-3">
+                                    <textarea
+                                        class="form-control"
+                                        rows="6"
+                                        id="message"
+                                        placeholder="Сообщение"
+                                        required
+                                    ></textarea>
+                                </div>
+                                <div>
+                                    <button
+                                        class="btn btn-primary py-2 px-4"
+                                        type="submit"
+                                        id="submit"
+                                    >
+                                        Отправить
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mb-5">
+                        <p>
+                            Напишите нам, чтобы получить полезные советы по
+                            организации пространства, уборке, ремонту, освещению
+                            и хранению вещей. Мы подскажем, как сделать ваш дом
+                            более удобным и уютным. Наши эксперты готовы
+                            ответить на вопросы и поделиться практическими
+                            рекомендациями.
+                        </p>
+                        <div class="d-flex">
+                            <i
+                                class="fa fa-map-marker-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
+                                style="width: 45px; height: 45px"
+                            ></i>
+                            <div class="pl-3">
+                                <h5>Адрес</h5>
+                                <p>
+                                    Астана Шара Жиенқұлова 12/1, Астана 020000,
+                                    Казахстан
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <i
+                                class="fa fa-envelope d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
+                                style="width: 45px; height: 45px"
+                            ></i>
+                            <div class="pl-3">
+                                <h5>E-Mail</h5>
+                                <p>home_ academy@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <i
+                                class="fa fa-phone-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
+                                style="width: 45px; height: 45px"
+                            ></i>
+                            <div class="pl-3">
+                                <h5>Телефон</h5>
+                                <p>+77172642607</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45563.404840951174!2d71.47706667160847!3d51.10387820803798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245818394517da3%3A0x5b389ede79bb8f25!2sTiyn!5e0!3m2!1suk!2sua!4v1759474616562!5m2!1suk!2sua"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
+        >
+            <div class="row pt-5">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <a
+                        href=""
+                        class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
+                        style="font-size: 40px; line-height: 40px"
+                    >
+                        <span class="text-white">HomeAcademy</span>
+                    </a>
+                    <p>
+                        Спасибо, что посетили наш сайт. Здесь вы найдёте
+                        полезные советы по организации пространства, уборке,
+                        ремонту и созданию уюта в интерьере.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <h3 class="text-primary mb-4">Свяжитесь с нами</h3>
+                    <div class="d-flex">
+                        <h4 class="fa fa-map-marker-alt text-primary"></h4>
+                        <div class="pl-3">
+                            <h5 class="text-white">Адрес</h5>
+                            <p>
+                                Астана Шара Жиенқұлова 12/1, Астана 020000,
+                                Казахстан
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <h4 class="fa fa-envelope text-primary"></h4>
+                        <div class="pl-3">
+                            <h5 class="text-white">Email</h5>
+                            <p>home_ academy@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <h4 class="fa fa-phone-alt text-primary"></h4>
+                        <div class="pl-3">
+                            <h5 class="text-white">Телефон</h5>
+                            <p>+77172642607</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <h3 class="text-primary mb-4">Быстрые ссылки</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white mb-2" href="index.html"
+                            ><i class="fa fa-angle-right mr-2"></i>Главная</a
+                        >
+                        <a class="text-white mb-2" href="about.html"
+                            ><i class="fa fa-angle-right mr-2"></i>О нас</a
+                        >
+                        <a class="text-white mb-2" href="privacy-policy.html"
+                            ><i class="fa fa-angle-right mr-2"></i>Политика
+                            конфиденциальности</a
+                        >
+                        <a class="text-white mb-2" href="terms-of-use.html"
+                            ><i class="fa fa-angle-right mr-2"></i>Условия
+                            использования</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary p-3 back-to-top"
+            ><i class="fa fa-angle-double-up"></i
+        ></a>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Cookie Usage Policy</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    This website uses cookies to provide you with the optimal
+                    user experience. Cookies are small text files that are
+                    stored on your device, support the functionality of the
+                    site, and provide anonymous usage statistics. By using our
+                    website, you agree to the use of cookies in accordance with
+                    our <a href="cookie-policy.html">policy</a>.
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Accept</button>
+                <button class="cookie-button" id="declineBtn">Decline</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>
